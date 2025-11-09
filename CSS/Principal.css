@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: #69337A;
+    width: auto;
+    height: 140px;
+}
+
+#LogoPequena {
+    width: 312px;
+    position: absolute;
+}
+
+#Inicio {
+    width: 280px;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #3A0053;
+    background-color: #FBC7FF;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#Inicio:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #3A0053;
+    transform: translateY(-3px);
+}
+ 
+#setas {
+    display: flex;
+    position: relative;
+    gap: 636px;
+}
+
+#SetaEsquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 66px;
+    position: absolute;
+    left: 324px;
+    top: 180px;
+    gap: 24px;
+}
+
+#SetaDireita {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 66px;
+    position: absolute;
+    right: 324px;
+    top: 180px;
+    gap: 24px;
+}
+
+#setaE1, #setaE2, #setaE3, #setaE4, #setaD1, #setaD2, #setaD3, #setaD4 {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#setaE1:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+ }
+
+ #setaE2:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+ }
+
+ #setaE3:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+ }
+
+ #setaE4:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+ }
+
+#setaD1:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+}
+
+#setaD2:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+}
+
+ #setaD3:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+}
+
+ #setaD4:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+}
+
+#boneca {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#boneca1 {
+    position: absolute;
+    width: 820px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#cabelo1 {
+    position: absolute;
+    width: 820px;
+    left: 780px;
+    top: 285px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#vestido1 {
+    position: absolute;
+    width: 820px;
+    left: 50%;
+    top: 416px;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+
+}
+
+#asa1 {
+     position: absolute;
+    width: 820px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+ #salvarfada {
+    width: 280px;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    top: 800px;
+    right: 590px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #3A0053;
+    background-color: #FBC7FF;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+ }
+
+ #salvarfada:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+ }
+

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: #69337A;
+    width: auto;
+    height: 140px;
+}
+
+#LogoPequena {
+    width: 312px;
+    position: absolute;
+    
+}
+
+#BotaoCriar {
+    width: 280px;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #3A0053;
+    background-color: #FBC7FF;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+#BotaoCriar:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #3A0053;
+    transform: translateY(-3px);
+}
+
+#Logo {
+    position: relative;
+}
+
+#LogoGrande {
+    position:absolute;
+    left: 428px;
+    top: -180px;
+    width: 1000px;
+}
+
+#inicio {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding-top: 350px;
+    gap: 30px;
+}
+
+h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+    color: #69337A;
+}
+
+#BotaoIniciar {
+    width: 580px;
+    height: 100px;
+    border-radius: 15px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #3A0053;
+    background-color: #FBC7FF;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+#BotaoIniciar:hover {
+    background-color: #b68edc;
+    box-shadow: 0 15px 25px #d8a8ff;
+    transform: translateY(-3px);
+}
