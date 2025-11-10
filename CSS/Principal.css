@@ -1,10 +1,16 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     border:0;
+}
+
+body {
+    height: 100vh;
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     position: relative;
     display: flex;
@@ -18,6 +24,7 @@ header {
     position: absolute;
 }
 
+/* Botão Inial pequeno */
 #Inicio {
     width: 280px;
     height: 70px;
@@ -42,10 +49,27 @@ header {
     transform: translateY(-3px);
 }
  
-#setas {
-    display: flex;
+.icone{
+    width: 30px;
+    margin-right: 15px;
+}
+
+/* Principal */
+main {
     position: relative;
-    gap: 636px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #69337A;
 }
 
 #SetaEsquerda {
@@ -55,7 +79,7 @@ header {
     width: 66px;
     position: absolute;
     left: 324px;
-    top: 180px;
+    top: 190px;
     gap: 24px;
 }
 
@@ -66,7 +90,7 @@ header {
     width: 66px;
     position: absolute;
     right: 324px;
-    top: 180px;
+    top: 190px;
     gap: 24px;
 }
 
@@ -75,60 +99,20 @@ header {
     z-index: 5;
 }
 
-#setaE1:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
- }
-
- #setaE2:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
- }
-
- #setaE3:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
- }
-
- #setaE4:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
- }
-
-#setaD1:hover {
+#setaE1:hover, #setaE2:hover, #setaE3:hover, #setaE4:hover, #setaD1:hover, #setaD2:hover, #setaD3:hover, #setaD4:hover {
     background-color: #b68edc;
     box-shadow: 0 15px 25px #d8a8ff;
     transform: translateY(-3px);
 }
 
-#setaD2:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
-}
-
- #setaD3:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
-}
-
- #setaD4:hover {
-    background-color: #b68edc;
-    box-shadow: 0 15px 25px #d8a8ff;
-    transform: translateY(-3px);
-}
-
+/* Fada */
 #boneca {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 820px;
 }
 
 #boneca1 {
@@ -143,7 +127,7 @@ header {
 #cabelo1 {
     position: absolute;
     width: 820px;
-    left: 780px;
+    left: 433px;
     top: 285px;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -167,12 +151,14 @@ header {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+
+/* Botão salvar */
  #salvarfada {
     width: 280px;
     height: 70px;
     border-radius: 15px;
     position: absolute;
-    top: 800px;
+    top: 680px;
     right: 590px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
@@ -191,3 +177,35 @@ header {
     transform: translateY(-3px);
  }
 
+.brilho {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #fff8ff, #fbc7ff, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: brilhoAnim 1s ease-out forwards;
+}
+
+/* Brilho do cursor */
+.sparkle {
+  position: absolute;
+  background: radial-gradient(circle, #fff8ff, #fbc7ff, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkleAnim 1s ease-out forwards;
+  box-shadow: 0 0 10px #fbc7ff, 0 0 20px #fff;
+  mix-blend-mode: screen;
+  z-index: 10;
+}
+
+@keyframes sparkleAnim {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

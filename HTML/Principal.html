@@ -2,19 +2,30 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="DreamFaerie" content="Crie sua fada!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream Faerie</title>
     <link rel="stylesheet" href="../CSS/Principal.css">
+    <link rel="icon" href="../Imagem/iconeLua.png" type="image/x-icon">
+
+    <!-- Fonte Montserrat Alternates -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
      <header>
         <img src="../Imagem/LogoPequena.png" alt="Logo Dream Faerie" id="LogoPequena">
-        <input type="button" value= "Início" onclick="location.href='Index.html'" id="Inicio">
+
+    <!-- Botão Início -->
+       <button id="Inicio" onclick="location.href='Index.html'">
+  <img src="../Imagem/IconeCasa.png" alt="Início" class="icone">
+  Início
+</button>>
+
     </header>
 
     <main>
+        <h1>Clique nas setas mágicas e personalize sua fada!</h1>
+        <!-- Setas de navegação -->
         <div id="setas">
         <div id="SetaEsquerda">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE1">
@@ -22,6 +33,7 @@
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE3">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE4">
         </div>
+
         <div id="SetaDireita">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD1">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD2">
@@ -29,16 +41,47 @@
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD4">
         </div>
         </div>
+
+        <!-- Fada -->
         <div id="boneca">
-            <img src="../Imagem/boneca1.png" alt="Boneca" id="boneca1">
-            <img src="../Imagem/cabelo1.png" alt="Cabelo" id="cabelo1">
-            <img src="../Imagem/vestido1.png" alt="Vestido" id="vestido1">
-            <img src="../Imagem/asa1.png" alt="Asas" id="asa1">
+            <img src="../Imagem/boneca1.png" alt="Boneca" id="boneca1" crossorigin="anonymous">
+            <img src="../Imagem/cabelo1.png" alt="Cabelo" id="cabelo1" crossorigin="anonymous">
+            <img src="../Imagem/vestido1.png" alt="Vestido" id="vestido1" crossorigin="anonymous">
+            <img src="../Imagem/asa1.png" alt="Asas" id="asa1" crossorigin="anonymous">
         </div>
+
+        <!-- Botão de salvar -->
         <input type="button" value="Salvar Fada!" id="salvarfada">
     </main>
+
     <script src="../SCRIPT/script.js"></script>
 
+
+    <!-- Brilho do cursor -->
+  <script>
+  document.addEventListener("mousemove", function (e) {
+    const sparkle = document.createElement("span");
+    sparkle.classList.add("sparkle");
+
+    sparkle.style.left = e.pageX + "px";
+    sparkle.style.top = e.pageY + "px";
+
+    // tamanho e rotação aleatória pra parecer natural
+    const size = Math.random() * 8 + 4 + "px";
+    sparkle.style.width = size;
+    sparkle.style.height = size;
+    sparkle.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+    document.body.appendChild(sparkle);
+
+    // remove o brilho depois de 1 segundo
+    setTimeout(() => {
+      sparkle.remove();
+    }, 1000);
+  });
+</script>
+
+<!-- Biblioteca -->
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
 </body>

@@ -111,13 +111,20 @@ Direita3.addEventListener("click", proximovestido);
 Esquerda4.addEventListener("click", asaanterior);
 Direita4.addEventListener("click", proximaasa);
 
+
+// Salvar fada
 document.getElementById("salvarfada").addEventListener("click", function() {
   const fada = document.getElementById("boneca");
 
-  html2canvas(fada, { backgroundColor: "#ebd8f9ff" }).then(canvas => {
+  html2canvas(fada, {
+    backgroundColor: "#d8c6e6ff",
+    scale: 2,
+    useCORS: true 
+  }).then(canvas => {
     const link = document.createElement("a");
     link.download = "MinhaFada.png";
-    link.href = canvas.toDataURL();
+    link.href = canvas.toDataURL("image/png"); 
     link.click();
   });
-});
+}); 
+

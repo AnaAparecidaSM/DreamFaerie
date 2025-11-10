@@ -2,15 +2,25 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="DreamFaerie " content="Crie sua fada!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream Faerie</title>
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="icon" href="../Imagem/iconeLua.png" type="image/x-icon">
+
+
+    <!-- Fonte Montserrat Alternates -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>     
     <header>
         <img src="../Imagem/LogoPequena.png" alt="Logo Dream Faerie" id="LogoPequena">
-        <input type="button" value="Criar" onclick="location.href='Principal.html'" id="BotaoCriar">
+
+        <!-- Botão Inicial -->
+        <button id="BotaoCriar" onclick="location.href='../HTML/Principal.html'">
+  <img src="../Imagem/IconeLapis.png" alt="Início" class="icone">
+  Criar
+</button>>
+
     </header>
     <main>
         <div id="Logo">
@@ -18,8 +28,29 @@
         </div>
         <div id="inicio">
             <h1>Crie sua fada!</h1>
+
+            <!-- Botão inicial -->
             <input type="button" value="Iniciar" onclick="location.href='Principal.html'" id="BotaoIniciar">
         </div>
     </main>
+
+    <!-- Brilho do cursor -->
+     <script>
+  document.addEventListener("mousemove", function (e) {
+    const sparkle = document.createElement("span");
+    sparkle.classList.add("sparkle");
+    sparkle.style.left = e.pageX + "px";
+    sparkle.style.top = e.pageY + "px";
+    const size = Math.random() * 8 + 4 + "px";
+    sparkle.style.width = size;
+    sparkle.style.height = size;
+    sparkle.style.transform = `rotate(${Math.random() * 360}deg)`;
+    document.body.appendChild(sparkle);
+    setTimeout(() => {
+      sparkle.remove();
+    }, 1000);
+  });
+</script>
+
 </body>
 </html>
