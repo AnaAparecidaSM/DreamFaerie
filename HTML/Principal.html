@@ -13,41 +13,34 @@
 
 <body>
      <header>
-        <img src="../Imagem/LogoPequena.png" alt="Logo Dream Faerie" id="LogoPequena">
-
-    <!-- Botão Início -->
-       <button id="Inicio" onclick="location.href='Index.html'">
+      <img src="../Imagem/LogoPequena.png" alt="Logo Dream Faerie" id="LogoPequena">
+      <button id="Inicio" onclick="location.href='Index.html'">
   <img src="../Imagem/IconeCasa.png" alt="Início" class="icone">
   Início
-</button>>
-
+</button>
     </header>
 
     <main>
         <h1>Clique nas setas mágicas e personalize sua fada!</h1>
-        <!-- Setas de navegação -->
-        <div id="setas">
-        <div id="SetaEsquerda">
+        <div id="Principal">
+          <div id="SetaEsquerda">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE1">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE2">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE3">
             <img src="../Imagem/SetaEsquerda.png" alt="seta" id="setaE4">
-        </div>
-
-        <div id="SetaDireita">
+          </div>
+          <div id="SetaDireita">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD1">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD2">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD3">
             <img src="../Imagem/SetaDireita.png" alt="seta" id="setaD4">
-        </div>
-        </div>
-
-        <!-- Fada -->
-        <div id="boneca">
+          </div>
+          <div id="boneca">
             <img src="../Imagem/boneca1.png" alt="Boneca" id="boneca1" crossorigin="anonymous">
-            <img src="../Imagem/cabelo1.png" alt="Cabelo" id="cabelo1" crossorigin="anonymous">
-            <img src="../Imagem/vestido1.png" alt="Vestido" id="vestido1" crossorigin="anonymous">
-            <img src="../Imagem/asa1.png" alt="Asas" id="asa1" crossorigin="anonymous">
+            <img src="../Imagem/cabelo1.png" alt="Cabelo" id="cabelo1" crossorigin="anonymous"> -->
+            <img src="../Imagem/vestido1.png" alt="Vestido" id="vestido1" crossorigin="anonymous"> --> -->
+            <img src="../Imagem/asa1.png" alt="Asas" id="asa1" crossorigin="anonymous"> --> -->
+          </div>
         </div>
 
         <!-- Botão de salvar -->
@@ -62,19 +55,13 @@
   document.addEventListener("mousemove", function (e) {
     const sparkle = document.createElement("span");
     sparkle.classList.add("sparkle");
-
     sparkle.style.left = e.pageX + "px";
     sparkle.style.top = e.pageY + "px";
-
-    // tamanho e rotação aleatória pra parecer natural
     const size = Math.random() * 8 + 4 + "px";
     sparkle.style.width = size;
     sparkle.style.height = size;
     sparkle.style.transform = `rotate(${Math.random() * 360}deg)`;
-
     document.body.appendChild(sparkle);
-
-    // remove o brilho depois de 1 segundo
     setTimeout(() => {
       sparkle.remove();
     }, 1000);

@@ -10,36 +10,33 @@ body {
     box-sizing: border-box;
 }
 
-/* Header */
 header {
-    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #69337A;
-    width: auto;
-    height: 140px;
+    height: 16vh;
 }
 
 #LogoPequena {
-    width: 312px;
-    position: absolute;
+    width: 300px;
 }
 
-/* Botão Inial pequeno */
 #Inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     width: 280px;
     height: 70px;
     border-radius: 15px;
-    position: absolute;
-    top: 35px;
-    right: 100px;
+    background-color: #FBC7FF;
+    margin-right: 100px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 36px;
     color: #3A0053;
-    background-color: #FBC7FF;
-    position: absolute;
-    z-index: 10;
     cursor: pointer;
 }
 
@@ -48,13 +45,12 @@ header {
     box-shadow: 0 15px 25px #3A0053;
     transform: translateY(-3px);
 }
- 
-.icone{
-    width: 30px;
-    margin-right: 15px;
+
+.icone {
+    width: 36px;
 }
 
-/* Principal */
+
 main {
     position: relative;
     display: flex;
@@ -176,16 +172,6 @@ h1 {
     box-shadow: 0 15px 25px #d8a8ff;
     transform: translateY(-3px);
  }
-
-.brilho {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, #fff8ff, #fbc7ff, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: brilhoAnim 1s ease-out forwards;
-}
 
 /* Brilho do cursor */
 .sparkle {
